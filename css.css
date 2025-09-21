@@ -1,0 +1,152 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --dark-green: #2E5D34;
+  --light-green: #A3C4A0;
+  --sand: #F5F1E7;
+  --dark-gray: #4A4A4A;
+  --light-gray: #D9D9D9;
+  --accent: #F08A5D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--sand);
+  color: var(--dark-gray);
+  margin:0;
+  line-height: 1.8;
+  font-size:16px;
+}
+
+
+header {
+  background: linear-gradient(90deg, var(--dark-green), var(--light-green));
+  color:white;
+  padding:20px 15px;
+}
+header h1 {
+  margin:0;
+  font-size:36px;
+  letter-spacing:0.5px;
+}
+nav ul {
+  list-style:none;
+  display:flex;
+  padding:0;
+  margin-top:10px;
+  gap:12px;
+}
+nav ul li a {
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  padding:6px 12px;
+  border-radius:6px;
+  transition: all 0.2s;
+}
+nav ul li a:hover {
+  background-color: var(--accent);
+  transform:translateY(-2px);
+}
+
+
+.container {
+  max-width:1200px;
+  margin:20px auto;
+  padding:15px;
+}
+
+article {
+  background:white;
+  padding:25px;
+  border-radius:10px;
+ 
+  columns:2;
+  column-gap:30px;
+}
+
+article h2, article h3 {
+  margin-top:20px;
+}
+
+article p {
+  margin-bottom:16px;
+}
+
+
+figure {
+  margin:0 0 20px 0;
+  break-inside: avoid;
+}
+figure img {
+  width:100%;
+  border-radius:8px;
+}
+figcaption {
+  font-size:14px;
+  color:#777;
+  margin-top:6px;
+}
+
+
+.aside {
+  float:right;
+  width:250px;
+  background: var(--light-green);
+  padding:15px;
+  margin:0 0 20px 20px;
+  border-radius:8px;
+  color: var(--dark-gray);
+}
+.aside h4 {
+  margin-top:0;
+}
+
+ul, ol {
+  margin:10px 0 15px 20px;
+}
+table {
+  width:100%;
+  border-collapse: collapse;
+  margin-top:15px;
+}
+th, td {
+  padding:8px;
+  text-align:left;
+  border:1px solid var(--light-gray);
+}
+th {
+  background: var(--dark-green);
+  color:white;
+}
+
+
+blockquote {
+  border-left:4px solid var(--accent);
+  padding-left:12px;
+  margin:20px 0;
+
+  font-style:italic;
+}
+
+
+footer {
+  background: var(--light-green);
+  text-align:center;
+  padding:15px;
+  color: var(--dark-gray);
+  margin-top:20px;
+  clear:both;
+}
+
+@media(max-width:900px) {
+  article {columns:1;}
+  .aside {float:none;width:auto;margin:10px 0;}
+  nav ul {flex-wrap:wrap;}
+}
+</style>
